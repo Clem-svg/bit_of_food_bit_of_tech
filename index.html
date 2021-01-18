@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The FoodTech</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1>Welcome</h1>
+
+  <div class="container">
+
+  </div>
+
+  <div class ="tabContainer">
+    <div class="buttonContainer">
+      <button onclick="showPanel(0,'#CCBFB4')">Notre concept</button>
+      <button onclick="showPanel(1,'#CCBFB4')">Le menu</button>
+      <button onclick="showPanel(2,'#CCBFB4')">La galerie</button>
+
+    </div>
+
+    <div class="tabPanel">
+      <img src="./images/homemadepasta.jpg" class="img-fluid">
+      <p>Des plats maison, préparés chaque jour au fil des saisons</p>
+    </div>
+    <div class="tabPanel">
+        <div class="flex flex-col justify-center">
+          <h1> Plat du jour</h1>
+          <p id="todayMenu"></p>
+          <button id="menuGenerator">
+            Pas envie ? Et bah on change !
+          </button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup__wrapper">
+      <div class="popup__container">
+        <h1 class="popup__title">Merci de votre visite</h1>
+        <p>Et à très bientôt sur notre site !</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="text/javascript" src="tab.js"></script>
+  <script type="text/javascript" src="menugenerator.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+
+
+
+</body>
+</html>
